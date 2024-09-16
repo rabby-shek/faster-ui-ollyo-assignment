@@ -1,1 +1,31 @@
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.nav {
+  width: 499px;
+  height: 68px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav .nav-list .nav-item{
+    margin-right: 20px;
+}
