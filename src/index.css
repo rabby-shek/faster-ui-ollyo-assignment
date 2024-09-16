@@ -3,29 +3,56 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #f5f8ff;
+}
 a {
   text-decoration: none;
 }
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-right: 20px;
-  margin-left: 20px;
+/* Global Styles */
+.section-title{
+  font-size: 60px;
 }
-.nav {
+/* Header Styles */
+/* Default state for the header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0); /* Transparent by default */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Background color on scroll */
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 1); /* Fully visible on scroll */
+}
+
+.nav{
   width: 499px;
   height: 68px;
-  border: 1px solid black;
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #fff;
 }
-.nav .nav-list {
-  display: flex;
-  list-style: none;
+.nav-link{
+  font-size: 16px;
+  font-weight: 400;
+  color: #8987A1;
 }
-.nav .nav-list .nav-item{
-    margin-right: 20px;
+/* Hero section styles */
+.hero-section {
+  background-image: url('./assets/images/hero-bg.png');
+  background-position: center 10%; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: 80%; /* Adjust the image to fit within the section */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+}
+
+.hero-section-text{
+  font-size: 73.34px;
+  font-weight: 700;
 }
