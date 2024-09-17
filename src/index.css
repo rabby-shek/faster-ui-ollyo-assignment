@@ -81,3 +81,11 @@ a {
 .contact-form-text-area{
   height: 222px;
 }
+/* footer section styles */
+.footer{
+  background-color: #fff;
+  height: 398px;
+  border-radius: 40px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
