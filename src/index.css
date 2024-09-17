@@ -43,17 +43,17 @@ a {
   font-weight: 400;
   color: #8987a1;
 }
-.logo-container img{
+.logo-container img {
   width: 170px;
   height: 37.29px;
 }
-.sign-in-btn{
+.sign-in-btn {
   font-weight: 400;
   font-size: 16px;
-  color: #8987A1;
+  color: #8987a1;
 }
-.sign-up-btn{
-  background-color: #4E47FF;
+.sign-up-btn {
+  background-color: #4e47ff;
   color: #fff;
   width: 132px;
   height: 48px;
@@ -62,7 +62,7 @@ a {
   font-size: 16px;
   transition: 0.3s;
 }
-.sign-up-btn:hover{
+.sign-up-btn:hover {
   background-color: #4d47ff6e;
   color: #fff;
 }
@@ -77,11 +77,28 @@ a {
 }
 
 .hero-section-text {
+  width: 764px;
+  height: 315px;
   font-size: 73.34px;
   font-weight: 700;
+  color: #252432;
+  margin-top: 1rem;
+  line-height: 73.34px;
+}
+.hero-section-btn {
+  background-color: #252432;
+  color: #fff;
+  width: 211px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: -60px;
+}
+.hero-section-btn:hover {
+  color: #fff;
 }
 /* contact section styles */
-.contact{
+.contact {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -100,11 +117,11 @@ a {
 .contact-form-input {
   height: 70px;
 }
-.contact-form-text-area{
+.contact-form-text-area {
   height: 222px;
 }
 /* footer section styles */
-.footer{
+.footer {
   background-color: #fff;
   height: 398px;
   border-radius: 40px;
