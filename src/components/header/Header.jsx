@@ -51,8 +51,8 @@ const Header = () => {
         </nav>
 
         <div className="nav-button-container">
-          <button className="btn btn-outline-primary me-2">Sign In</button>
-          <button className="btn btn-primary">Sign Up</button>
+          <button className="btn sign-in-btn me-2">Sign In</button>
+          <button className="btn sign-up-btn">Sign Up</button>
         </div>
       </div>
     </header>

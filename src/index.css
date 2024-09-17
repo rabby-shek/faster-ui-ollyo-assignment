@@ -36,14 +36,36 @@ a {
   width: 499px;
   height: 68px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: hsla(0, 0%, 100%, 0.658);
 }
 .nav-link {
   font-size: 16px;
   font-weight: 400;
   color: #8987a1;
 }
-
+.logo-container img{
+  width: 170px;
+  height: 37.29px;
+}
+.sign-in-btn{
+  font-weight: 400;
+  font-size: 16px;
+  color: #8987A1;
+}
+.sign-up-btn{
+  background-color: #4E47FF;
+  color: #fff;
+  width: 132px;
+  height: 48px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.sign-up-btn:hover{
+  background-color: #4d47ff6e;
+  color: #fff;
+}
 /* Hero section styles */
 .hero-section {
   background-image: url("./assets/images/hero-bg.png");
