@@ -3,14 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: #f5f8ff;
 }
 a {
   text-decoration: none;
 }
 /* Global Styles */
-.section-title{
+.section-title {
   font-size: 60px;
 }
 /* Header Styles */
@@ -31,20 +31,21 @@ a {
   background-color: rgba(255, 255, 255, 1); /* Fully visible on scroll */
 }
 
-.nav{
+.nav {
   width: 499px;
   height: 68px;
   border-radius: 20px;
   background-color: #fff;
 }
-.nav-link{
+.nav-link {
   font-size: 16px;
   font-weight: 400;
-  color: #8987A1;
+  color: #8987a1;
 }
+
 /* Hero section styles */
 .hero-section {
-  background-image: url('./assets/images/hero-bg.png');
+  background-image: url("./assets/images/hero-bg.png");
   background-position: center 10%; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-size: 80%; /* Adjust the image to fit within the section */
@@ -52,7 +53,7 @@ a {
   width: 100%; /* Full width */
 }
 
-.hero-section-text{
+.hero-section-text {
   font-size: 73.34px;
   font-weight: 700;
 }
