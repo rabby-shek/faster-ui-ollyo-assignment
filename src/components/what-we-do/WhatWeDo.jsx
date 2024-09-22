@@ -8,9 +8,11 @@ const WhatWeDo = () => {
         <div className="col-lg-9 col-sm-6">
           <div className="row g-4">
             <div className="col-lg-4">
-              <div class="card h-100">
+              <div class="card h-100 b-none">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">
+                  
+                  </h5>
                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
