@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +16,7 @@ a {
   font-size: 60px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
+  color: #252432;
 }
 .card{
   border: none;
@@ -81,7 +83,7 @@ a {
   background-position: center 10%; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-size: contain contain; /* Adjust the image to fit within the section */
-  height: 100vh; /* Full viewport height */
+  height: 120vh; /* Full viewport height */
   width: 100%; /* Full width */
 }
 
@@ -91,7 +93,6 @@ a {
   font-size: 73.34px;
   font-weight: 700;
   color: #252432;
-  margin-top: 1rem;
   line-height: 73.34px;
   font-family: "Raleway", sans-serif;
 }
@@ -137,4 +138,54 @@ a {
   border-radius: 40px;
   padding: 20px;
   margin-bottom: 100px;
+}
+
+/* What we do section styles */
+.what-we-do{
+  padding-bottom: 100px;
+}
+.w-card-icon-container{
+  height: 44px;
+  width: 44px;
+  background-color: #F5F8FF;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+}
+.w-icon{
+  width: 24px;
+  height: 24px;
+}
+.w-card-title{
+  font-size: 19.77px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  margin-top: 1rem;
+}
+.w-text{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin-top: 1rem;
+}
+.WhatWeDoPhoto{
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  bottom: 0;
+  padding: 1rem;
+}
+.w-big-icon{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.vector-big-icon-container{
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  background-color: #5B54FF;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
