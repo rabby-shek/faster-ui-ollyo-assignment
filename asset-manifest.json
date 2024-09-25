@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/faster-ui-ollyo-assignment/static/css/main.b1354123.css",
+    "main.js": "/faster-ui-ollyo-assignment/static/js/main.df524c3f.js",
+    "static/media/hero-bg.png": "/faster-ui-ollyo-assignment/static/media/hero-bg.32699d02e53e446e2128.png",
+    "static/media/what-we-do.png": "/faster-ui-ollyo-assignment/static/media/what-we-do.c6a718ab4aeecb87cc42.png",
+    "index.html": "/faster-ui-ollyo-assignment/index.html",
+    "main.b1354123.css.map": "/faster-ui-ollyo-assignment/static/css/main.b1354123.css.map",
+    "main.df524c3f.js.map": "/faster-ui-ollyo-assignment/static/js/main.df524c3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1354123.css",
+    "static/js/main.df524c3f.js"
+  ]
+}
