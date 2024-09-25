@@ -1,13 +1,24 @@
-import React, { useState } from "react";
-import { FiPlus, FiMinus } from "react-icons/fi"; // Plus and minus icons for expand/collapse
+import React, { useEffect, useState } from "react";
+import { FiPlus, FiMinus } from "react-icons/fi";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FrequentlyAsked = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 800,  // Animation duration
+      easing: 'ease-in-out',  // Easing for smoothness
+      once: true,  // Animation happens only once
+    });
+  }, []);
+
   const faqs = [
     {
-      question: "What is your refund policy?",
-      answer: "We offer a 30-day refund policy for unused products.",
+      question: "How can I contact Inkyy Team?",
+      answer: `You can reach us through our contact form on our website or by emailing us at <span>hello@inkyy.com</span>. We typically respond within 24 hours.`,
     },
     {
       question: "How long does shipping take?",
@@ -24,7 +35,7 @@ const FrequentlyAsked = () => {
   };
 
   return (
-    <section className="container frequently-asked my-5">
+    <section className="container frequently-asked">
       <div className="row">
         <div className="col-5">
           <h2 className="section-title">Frequently Asked Questions</h2>
@@ -32,17 +43,15 @@ const FrequentlyAsked = () => {
         <div className="col-7">
           <div className="accordion" id="faqList">
             {faqs.map((faq, index) => (
-              <div key={index} className="mb-3">
+              <div
+                key={index}
+                className="mb-3"
+                data-aos="fade-up"  // Animation for scrolling
+                data-aos-delay={index * 100} // Stagger animation by index
+              >
                 <div
                   className="faq-question d-flex justify-content-between align-items-center py-2"
                   onClick={() => toggleFAQ(index)}
-                  style={{
-                    cursor: "pointer",
-                    backgroundColor: "#fff",
-                    padding: "20px",
-                    height: "70px",
-                    borderRadius: "10px",
-                  }} // Added subtle bottom border only
                 >
                   <span>{faq.question}</span>
                   {activeIndex === index ? <FiMinus /> : <FiPlus />}
@@ -50,16 +59,8 @@ const FrequentlyAsked = () => {
                 {activeIndex === index && (
                   <div
                     className="faq-answer py-2"
-                    style={{
-                      backgroundColor: "#fff",
-                      padding: "20px",
-                      height: "70px",
-                      borderRadius: "10px",
-                      marginTop: "-10px",
-                    }}
-                  >
-                    {faq.answer}
-                  </div>
+                    dangerouslySetInnerHTML={{ __html: faq.answer }} // Insert raw HTML
+                  />
                 )}
               </div>
             ))}

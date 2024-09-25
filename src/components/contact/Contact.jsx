@@ -6,34 +6,37 @@ const Contact = () => {
       <div className="section-title text-center">Let’s Get in Touch</div>
       <form className="contact-form">
         <div className="mb-3">
-          <label htmlFor="exampleInputEmail1" className="form-label">
-            Email address
+          <label htmlFor="email" className="form-label">
+            Email 
           </label>
           <input
             type="email"
             className="form-control contact-form-input"
-            id="exampleInputEmail1"
+            id="email"
             aria-describedby="emailHelp"
+            placeholder="email@example.com"
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="exampleInputPassword1" className="form-label">
-            Password
+          <label htmlFor="name" className="form-label">
+            Name
           </label>
           <input
-            type="password"
+            type="text"
             className="form-control contact-form-input"
-            id="exampleInputPassword1"
+            id="name"
+            placeholder="Full Name"
           />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">
-            Example textarea
+            Message
           </label>
           <textarea
             class="form-control contact-form-text-area"
-            id="exampleFormControlTextarea1"
+            id="message"
             rows="3"
+            placeholder="Write your message..."
           ></textarea>
         </div>
         <button type="submit" className="btn contact-submit-btn">

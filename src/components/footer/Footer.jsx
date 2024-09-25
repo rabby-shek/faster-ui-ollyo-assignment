@@ -1,7 +1,12 @@
 import React from "react";
 import BrandLogo from "../../assets/images/Logo.png";
 import { CiHeart } from "react-icons/ci";
-import { FaInstagram, FaLinkedinIn, FaTiktok, FaDribbble   } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaTiktok,
+  FaDribbble,
+} from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="container footer">
@@ -44,7 +49,8 @@ const Footer = () => {
       </div>
       <div className="row">
         <div className="col-lg-6 col-sm-6">
-        <CiHeart className="me-2" />Made with love powered by inkyy.com
+          <CiHeart className="me-2" />
+          Made with love powered by inkyy.com
         </div>
         <div className="col-lg-6 col-sm-6">
           <ul className="footer-social-links">
@@ -58,7 +64,7 @@ const Footer = () => {
               <FaTiktok />
             </li>
             <li>
-              <FaDribbble  />
+              <FaDribbble />
             </li>
           </ul>
         </div>

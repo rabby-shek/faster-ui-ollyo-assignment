@@ -116,6 +116,7 @@ a {
 .contact-form {
   width: 696px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 .contact-submit-btn {
   background-color: #4e47ff;
@@ -131,6 +132,11 @@ a {
 .contact-form-text-area {
   height: 222px;
 }
+.contact-form label{
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
 /* footer section styles */
 .footer {
   background-color: #fff;
@@ -138,6 +144,7 @@ a {
   border-radius: 40px;
   padding: 20px;
   margin-bottom: 100px;
+  padding: 30px;
 }
 
 /* What we do section styles */
@@ -279,4 +286,38 @@ a {
   background-color: #F5F8FF;
   border-radius: 10px;
   padding: 20px;
+}
+/* frequently asked section styles */
+.frequently-asked{
+  margin-top: 170px;
+}
+.faq-question{
+  cursor: pointer;
+  background-color: #fff;
+  padding: 20px;
+  height: 70px;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.faq-answer{
+  background-color: #fff;
+  padding: 20px;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  margin-top: -15px;
+  font-weight: 400px;
+  color: #8987A1;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Inter", sans-serif;
+}
+.faq-answer span{
+  font-weight: 700;
+  font-size: 16px;
+  color: #252432;
 }

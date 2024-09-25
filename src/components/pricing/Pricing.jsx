@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaArrowRightLong } from "react-icons/fa6";
+
 const Pricing = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Initialize AOS
+  }, []);
+
   return (
-    <section className="container pricing">
+    <section className="container pricing" data-aos="fade-up">
       <div className="row">
-        <div className="col-lg-5">
+        <div className="col-lg-5" data-aos="fade-right">
           <div className="section-title">Pricing</div>
           <p className="pricing-left-text">
             Take a look at some of our recent projects to see how we've helped
@@ -17,7 +24,7 @@ const Pricing = () => {
             <button className="btn meeting-btn">Schedule Meeting</button>
           </div>
         </div>
-        <div className="col-lg-7">
+        <div className="col-lg-7" data-aos="fade-left">
           <div className="card h-100 pricing-right-card">
             <div className="pricing-right-card-title">Unlimited Services</div>
             <p className="pricing-right-card-text">
@@ -41,9 +48,14 @@ const Pricing = () => {
               </div>
             </div>
             <div className="row price-right-container">
-              <div className="col-6"><span className="price">$3,250</span><span className="month">/mo</span></div>
               <div className="col-6">
-                <div className="h-100 d-flex justify-content-end align-items-center p-3 b"><FaArrowRightLong /></div>
+                <span className="price">$3,250</span>
+                <span className="month">/mo</span>
+              </div>
+              <div className="col-6">
+                <div className="h-100 d-flex justify-content-end align-items-center p-3 b">
+                  <FaArrowRightLong />
+                </div>
               </div>
             </div>
           </div>
